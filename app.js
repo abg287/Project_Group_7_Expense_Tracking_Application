@@ -19,7 +19,7 @@
 
   app.use( bodyParser.json() );
   app.use( bodyParser.urlencoded( { extended: true } ) );
-  app.use( express.static( "frontend/build" ) );
+  app.use( express.static( "build" ) );
   mongoose.connect( url + database );
 
   const expensesSchema = {

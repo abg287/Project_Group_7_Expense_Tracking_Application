@@ -4,7 +4,7 @@ import React from "react";
 function Category( props ) {
 
   return (
-    <option>{ props.name }</option>
+    <option>{ props?.name }</option>
   )
 }
 

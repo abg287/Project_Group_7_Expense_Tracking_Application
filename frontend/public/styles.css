@@ -38,6 +38,14 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.section-summary {
+  text-align: center;
+}
+
+.section-summary h3, select, div {
+  padding: 10px;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -52,11 +60,11 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.details {
+.expenses {
     height: auto;
 }
 
-.details-content {
+.expenses-content {
     line-height: 2;
 }
 
@@ -82,16 +90,16 @@ body {
 .add-expense textarea {
   width: 100%;
   border: none;
-  padding: 4px;
+  padding: 10px;
   outline: none;
   font-size: 1.2em;
   font-family: inherit;
   resize: none;
+  margin-bottom: 10px;
 }
 
 .add-expense button {
     position: absolute;
-    float: right;
     right: 18px;
     bottom: -27px;
     background-color: #4CAF50;
@@ -102,23 +110,31 @@ body {
     border-radius: 50%;
 }
 
+.add-expense form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
 /* .addExpense button:hover {
     background-color: #45a049;
 } */
 
-.budget {
+.summary {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.budget div {
+.summary div {
     font-size: 24px;
     margin: 5px;
 }
 
-.budget div:last-child {
+.summary div:last-child {
     font-size: 36px;
     font-weight: bold;
 }
@@ -129,7 +145,7 @@ img {
     border-radius: 8px;
 }
 
-.item {
+.expense {
   background: #4CAF50;
   border-radius: 7px;
   box-shadow: 0 2px 5px #ccc;
@@ -139,7 +155,14 @@ img {
   float: left;
 }
 
-.item h1, p {
+.expense h1, p {
   font-size: 1.1em;
   color: #fff;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
 }
